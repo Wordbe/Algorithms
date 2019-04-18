@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 //퀵정렬 QuickSort
 int partition(int A[], int p, int r)
 {
@@ -26,4 +28,8 @@ void quickSort(int A[], int p, int r) // A[p...r]에서 첫번째 포인터와 �
 		quickSort(A, p, q - 1); // pivot기준 뒷쪽 배열 재귀호출
 		quickSort(A, q + 1, r); // pivot기준 앞쪽 배열 재귀호출
 	}
+}
+
+int main(){
+	return 0;
 }
